@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dear, Nova</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="body">
+    <div class="birthdayCard">
+      <div class="cardFront">
+        <div class="depan">
+          <h3 class="happy">노바스를 위해</h3>
+          <img class="gambar" src="gambar.png" alt="" width="300px">
+        </div>
+        <div class="dalam">
+          <video src="video.mp4" width="250px" class="video-play"></video>
+        </div>
+
+
+      </div>
+      <div class="cardInside">
+        <p>makasih udah jadi cewe kuat di taun 2022 ini, semoga taun depan lebih2 rejeki, kesehatannya! aamiin. semoga
+          taun depan udah ada yg ndengerin ngeluhmu juga ya wkw. selamat ultah juga!
+        </p>
+        <p>and ur still the most cute girl i've ever seen this year 🥰</p>
+        <img src="nopa.jpeg" alt="" class="nopa">
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const video = document.querySelector('.birthdayCard');
+    const videoContainer = document.querySelector('.dalam');
+    const videoTag = videoContainer.querySelector('.video-play');
+
+    video.addEventListener('mouseenter', () => {
+      videoContainer.style.display = 'block';
+      // videoTag.currentTime = 0;
+      videoTag.play();
+    });
+
+    video.addEventListener('mouseleave', () => {
+      videoContainer.style.display = 'none';
+      videoTag.pause();
+    });
+  </script>
+</body>
+
+</html>
